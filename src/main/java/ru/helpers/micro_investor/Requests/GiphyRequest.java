@@ -1,10 +1,11 @@
-package ru.helpers.micro_investor;
+package ru.helpers.micro_investor.Requests;
 
 import feign.Param;
 import feign.RequestLine;
 import org.json.simple.JSONObject;
+import org.springframework.stereotype.Component;
 
 public interface GiphyRequest {
-    @RequestLine("GET /v1/gifs/search?api_key={apiKey}&q={condition}&limit=1&offset=0&rating=r&lang=en")
+    @RequestLine("GET /v1/gifs/random?api_key={apiKey}&tag={condition}&rating=r")
     JSONObject getResponse(@Param("apiKey") String apiKey, @Param("condition") String condition);
 }
