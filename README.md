@@ -22,7 +22,7 @@ http://localhost:8080/rate/RUB
 ```console
 git clone https://github.com/just-a-tractor/Micro_investor.git
 cd Micro_investor
-.\gradlew build
+./gradlew build
 ```
   
 ## Запуск
